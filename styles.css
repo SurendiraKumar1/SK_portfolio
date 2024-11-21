@@ -47,13 +47,25 @@ section h2 {
     padding-bottom: 5px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-ul li {
-    margin-bottom: 10px;
+.gallery img {
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#three-container {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
 }
 
 footer {
