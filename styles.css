@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
@@ -11,6 +10,13 @@ header {
     background: #f4f4f4;
     padding: 20px;
     border-bottom: 2px solid #ddd;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 header h1 {
@@ -38,7 +44,7 @@ main {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 section h2 {
@@ -47,24 +53,17 @@ section h2 {
     padding-bottom: 5px;
 }
 
-.gallery {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 #three-container {
     width: 100%;
     height: 500px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.info {
+    text-align: center;
     margin-top: 20px;
 }
 
