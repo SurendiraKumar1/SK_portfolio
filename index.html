@@ -1,1579 +1,269 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shree Anandha Bhavan Menu</title>
-    <style>
-        /* Base Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffeb99; /* light yellow */
-            color: #4d2600; /* dark brown */
-            margin: 0px;
-            padding: 20px;
-            border-radius: 5px;
-        }
-    
-        header {
-            background-color: #a6722e; /* medium brown */
-            color: #4d2600;
-            text-align: center;
-            padding: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-    
-        .menu-section {
-            padding: 15px;
-            margin-bottom: 10px;
-            background-color: #ffe680; /* yellow */
-            border-bottom: 2px solid #4d2600;
-            border: 1px dotted #4d2600;
-            border-radius: 5px;
-        }
-    
-        .menu-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-    
-        .menu-item {
-            margin: 20px 0;
-            font-size: 15px;
-            display: flex;
-            justify-content: space-between;
-        }
-    
-        .price {
-            font-size: 8px;
-            background-color: #ffcc66; /* darker yellow */
-            padding: 2px 50px;
-            border-radius: 5px;
-            color: #4d2600;
-            text-align: right;
-            align-items: center;
-        }
-    
-        .price-label {
-            font-size: 8px;
-            font-weight: bold;
-            display: flex;
-            width: 60px;
-            height: 0px;
-            text-align: left;
-        }
-    
-        footer {
-            background-color: #a6722e; /* medium brown */
-            color: #4d2600;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-        }
-    
-        .logo {
-            justify-content: center;
-            color: #4d2600;
-        }
-    
-        .welcome {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .button {
-            text-align: center;
-            text-decoration: none;
-        }
-    
-        a {
-            color: #4d2600;
-            text-decoration: none;
-            display: block;
-            font-weight: bold;
-            background-color: #ffe680;
-            border: 1px dotted #4d2600;
-            margin-left: 80px;
-            margin-right: 80px;
-            border-radius: 25px;
-        }
-    
-        .gomenu {
-            text-align: center;
-            margin-right: 150px;
-            margin-left: 150px;
-            background-color: #a6722e;
-            color: #ffe680;
-            text-align: center;
-            align-items: center;
-        }
-    
-        /* Media Queries for Responsiveness */
-    
-        /* For tablets and smaller desktops (max-width: 1024px) */
-        @media (max-width: 1024px) {
-            header {
-                font-size: 16px;
-                padding: 8px;
-            }
-    
-            .menu-section {
-                padding: 12px;
-            }
-    
-            .menu-title {
-                font-size: 16px;
-            }
-    
-            .menu-item {
-                font-size: 14px;
-            }
-    
-            .price {
-                font-size: 10px;
-                padding: 3px 6px;
-            }
-    
-            footer {
-                font-size: 12px;
-            }
-    
-            a {
-                margin-left: 60px;
-                margin-right: 60px;
-                font-size: 14px;
-            }
-    
-            .gomenu {
-                margin-right: 100px;
-                margin-left: 100px;
-            }
-        }
-    
-        /* For mobile devices (max-width: 600px) */
-        @media (max-width: 400px) {
-            body {
-                padding: 10px;
-            }
-    
-            header {
-                font-size: 14px;
-                padding: 6px;
-            }
-    
-            .menu-section {
-                padding: 10px;
-            }
-    
-            .menu-title {
-                font-size: 14px;
-            }
-    
-            .menu-item {
-                font-size: 12px;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-    
-            .price {
-                font-size: 12px;
-                padding: 4px 8px;
-            }
-    
-            footer {
-                font-size: 12px;
-            }
-    
-            a {
-                margin-left: 40px;
-                margin-right: 40px;
-                font-size: 12px;
-            }
-    
-            .gomenu {
-                margin-right: 50px;
-                margin-left: 50px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="./img/logo AB.png" width="100px" height="100px">
-            <h2 style="text-align:center;">HOTEL SREE ANANDHA BAVAN</h2>
-        </div>
-        
-        <h3 style="color:#ffbf36 ">MENU CARD<h3>
-    </header>
-     <p id="start"></p>
-    <p style="font-weight:bold;text-align:center;font-size:22px"> "Tap the Button to Customize Your Meal Experience"</p>
-    
-   
-    <div class="button">
-     
-      <a href="#section1">IDLY & OTHERS</a>
-      <p></p>
-      <a href="#section2">SNACKS</a>
-      <p></p>
-      <a href="#section3">DOSA VARIETIES</a>
-      <p></p>
-      <a href="#section4">IDIYAPPAM & APPAM</a>
-      <p></p>
-      <a href="#section5">VARIETIES RICE</a>
-      <p></p>
-      <a href="#section6">MEALS</a>
-       <p></p>
-      <a href="#section7">FRIED RICE & NOODLES</a>
-       <p></p>
-      <a href="#section8">STARTERS & MASALA</a>
-       <p></p>
-      <a href="#section9">PAROTTA VARIETIES</a>
-       <p></p>
-      <a href="#section10">IDLY VARIETIES</a>
-       <p></p>
-      <a href="#section11">SEVAI VARIETIES</a>
-       <p></p>
-      <a href="#section12">CHAAT VARIETIES</a>
-       <p></p>
-      <a href="#section13">FRESH JUICES</a>
-       <p></p>
-      <a href="#section14">TEA & COFFEE</a>
-    </div>
-    <p></p>
-    
-    <div class="menu-section">
-      <p id="section1"></p>
-        <div class="menu-title">Idly & Others (06:30 am to 10:30 am & 05:00 pm to 10:30 pm)</div>
-        <div class="menu-item">
-            <span>Idly</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 35.00
-                <span class="price-label">A/C:</span> 40.00
-                <span class="price-label">Parcel:</span> 38.00
-            </span>
-        </div>
-        <p id="section1"></p>
-        <div class="menu-item">
-            <span>Idly (Single)</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 17.50
-                <span class="price-label">A/C:</span> 20.00
-                <span class="price-label">Parcel:</span> 19.00
-            </span>
-        </div>
-        <div class="menu-item">
-            <span>Sambar (Mini) Idly</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 70.00
-                <span class="price-label">A/C:</span> 75.00
-                <span class="price-label">Parcel:</span> 75.00
-            </span>
-        </div>
-        <div class="menu-item">
-            <span>Sothi Idly</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 70.00
-                <span class="price-label">A/C:</span> 75.00
-                <span class="price-label">Parcel:</span> 75.00
-            </span>
-        </div>
-        <div class="menu-item">
-            <span>Pongal</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 75.00
-                <span class="price-label">A/C:</span> 80.00
-                <span class="price-label">Parcel:</span> 80.00
-            </span>
-        </div>
-        <div class="menu-item">
-            <span>Poori Masala</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 75.00
-                <span class="price-label">A/C:</span> 80.00
-                <span class="price-label">Parcel:</span> 80.00
-            </span>
-        </div>
-        <div class="menu-item">
-            <span>Poori (Single)</span>
-            <span class="price">
-                <span class="price-label">Non A/C:</span> 37.50
-                <span class="price-label">A/C:</span> 40.00
-                <span class="price-label">Parcel:</span> 40.00
-            </span>
-    </div>
-    <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section2"></p>
-    <div class="menu-title">Snacks (06:30 am to 10:00 am)</div>
-    <div class="menu-item">
-        <span>Vadai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 24.00
-            <span class="price-label">A/C:</span> 26.00
-            <span class="price-label">Parcel:</span> 26.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Sambar Vadai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 45.00 
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 50.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Kulipanniyaram (5pcs)(4:00 pm to 8:00 pm) </span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 55.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section3"></p>
-    <div class="menu-title">Dosa Varieties (6:30 am to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 75.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 90.00
-            <span class="price-label">A/C:</span> 95.00 
-            <span class="price-label">Parcel:</span> 95.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Rava Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 80.00
-            <span class="price-label">A/C:</span> 85.00
-            <span class="price-label">Parcel:</span> 85.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Onion Rava Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Rava Masal Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Cashew Rava Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 90.00
-            <span class="price-label">A/C:</span> 95.00
-            <span class="price-label">Parcel:</span> 95.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Oothapam (Plain)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 75.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Onion Oothapam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Tomato Oothappam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Onion Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Kall Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 75.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Kall Dosai (Single)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 37.50
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 40.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gobi Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00 
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Onion Oothapam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 105.00  
-            <span class="price-label">A/C:</span> 110.00
-            <span class="price-label">Parcel:</span> 110.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Oothapam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Poondu Podi Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Poondu Podi Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00 
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-        <div class="menu-item">
-        <span>Karuveppilai Podi Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Karuveppilai Podi Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00 
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pirandai Podi Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pirandai Podi Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Poondu Podi Ghee Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00 
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Karuveppilai Podi Ghee Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pirandai Podi Ghee Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Podi Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 120.00
-            <span class="price-label">A/C:</span> 125.00
-            <span class="price-label">Parcel:</span> 125.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Masal Roast</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Rava Masal Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 115.00
-            <span class="price-label">A/C:</span> 120.00
-            <span class="price-label">Parcel:</span> 120.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Onion Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 115.00
-            <span class="price-label">A/C:</span> 120.00
-            <span class="price-label">Parcel:</span> 120.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Onion Masal Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 120.00
-            <span class="price-label">A/C:</span> 125.00
-            <span class="price-label">Parcel:</span> 125.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu Podi Ghee Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 110.00
-            <span class="price-label">A/C:</span> 115.00
-            <span class="price-label">Parcel:</span> 115.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Wheat Dosai Single</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 40.00
-            <span class="price-label">A/C:</span> 42.50
-            <span class="price-label">Parcel:</span> 42.50
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Wheat Dosai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 80.00
-            <span class="price-label">A/C:</span> 85.00
-            <span class="price-label">Parcel:</span> 85.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section4"></p>
-    <div class="menu-title">Idiyappam & Appam (07:00 am to 10:00 am & 04:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Aappam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 55.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Podi Aappam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 65.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gravy Aappam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Idiyappam Sothi</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 65.00
-            <span class="price-label">A/C:</span> 70.00
-            <span class="price-label">Parcel:</span> 70.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Idiyappam Sothi Single</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 32.50 
-            <span class="price-label">A/C:</span> 35.00
-            <span class="price-label">Parcel:</span> 35.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section5"></p>
-    <div class="menu-title">Variety Rice (Any One Per Day) (11:00 am to 03:00 pm)</div>
-    <div class="menu-item">
-        <span>Sambar Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 75.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Lemon Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 75.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Tomato Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 75.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Curd Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 75.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Veg Biriyani</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 80.00 
-            <span class="price-label">A/C:</span> 85.00 
-            <span class="price-label">Parcel:</span> 85.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Biriyani</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00 
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Biriyani</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00 
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>
-     <div class="menu-item">
-        <span>Gobi Biryani</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 95.00 
-            <span class="price-label">A/C:</span> 100.00 
-            <span class="price-label">Parcel:</span> 100.00
-        </span>
-    </div>    
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section6"></p>
-    <div class="menu-title">Meals (12:00 pm to 04:00 pm)</div>
-    <div class="menu-item">
-        <span>South Indian Meals</span>
-        <span class="price">
-           
-            <span class="price-label">Price:</span> 150.00
-        </span>
-     </div>
-    <div class="menu-item">
-        <span>South Indian A/C Meals</span>
-        <span class="price">
-            
-            <span class="price-label">Price:</span> 175.00
-        </span>
-      </div>  
-    <div class="menu-item">
-        <span>South Indian Parcel Meals</span>
-        <span class="price">
-            <span class="price-label">Price:</span> 110.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section7"></p>
-    <div class="menu-title">Rice & Noodles (12:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00 
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Schezwan Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00| 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gobi Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Noodles</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00 
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Noodles</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Noodles</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Schezwan Noodles</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Jeera Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Ghee Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Veg Pulav</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00 
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Pulau</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Pulau</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00  
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mix Fried Rice</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 170.00 
-            <span class="price-label">A/C:</span> 180.00 
-            <span class="price-label">Parcel:</span> 180.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div>
-<div class="menu-section">
-  <p id="section8"></p>
-    <div class="menu-title">Starters & Masala (12:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Gobi 65</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00 
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom 65</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00 
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer 65</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 100.00 
-            <span class="price-label">A/C:</span> 105.00 
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pakoda</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00 
-            <span class="price-label">A/C:</span> 75.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gobi Masala</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Chenna Masala</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Butter Masala</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Masala</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Dhall Fry</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gobi Manchurian</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Manchurian</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Manchurian</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pepper Fry</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div>
-<div class="menu-section">
-  <p id="section9"></p>
-    <div class="menu-title">Parotta Varieties (12:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-       <span>Chappathi (2pcs)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 75.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Chappathi (Single)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 37.50
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 40.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Parotta (2pcs)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 75.00
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 80.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Parotta (Single)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 37.50
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 40.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Chilly Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Kaima Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00 
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pepper Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00 
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00 
-            <span class="price-label">A/C:</span> 160.00 
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Gobi Parotta</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 150.00
-            <span class="price-label">A/C:</span> 160.00
-            <span class="price-label">Parcel:</span> 160.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section10"></p>
-    <div class="menu-title">Special Idly Varieties (04:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Poondu PodI Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Karuveppilai PodI Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pirandai PodI Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Chilly Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paruppu PodI Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Onion Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pepper Idly</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 140.00 
-            <span class="price-label">A/C:</span> 150.00
-            <span class="price-label">Parcel:</span> 150.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Podi Paniyaram</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 130.00
-            <span class="price-label">A/C:</span> 140.00
-            <span class="price-label">Parcel:</span> 140.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section11"></p>
-    <div class="menu-title">Sevai Varieties (04:00 pm to 10:30 pm)</div>
-    <div class="menu-item">
-        <span>Podi Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Tomatto Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Garlic Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Onion Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Lemon Sevai</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 85.00
-            <span class="price-label">A/C:</span> 90.00
-            <span class="price-label">Parcel:</span> 90.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section12"></p>
-    <div class="menu-title">Chaat Varieties (12:00 pm to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Pav Bhaji Extra</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 25.00
-            <span class="price-label">A/C:</span> 30.00
-            <span class="price-label">Parcel:</span> 30.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pani Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 40.00
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 45.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Dhai Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Masal Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Sev Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Aloo Chaat</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Bread Chaat</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Bhel Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00 
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mix Chat</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00 
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Chana Samosa</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 55.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Dahi Bhel Puri</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Pav Bhaji</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Veg Sandwich</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 40.00
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 45.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Mushroom Sandwich</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00 
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Paneer Sandwich</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Samosa (1 Piece)</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 15.00
-            <span class="price-label">A/C:</span> 15.00
-            <span class="price-label">Parcel:</span> 15.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Dahi Pappadi Chat</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 60.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Cheese Sandwich</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 70.00
-            <span class="price-label">A/C:</span> 70.00
-            <span class="price-label">Parcel:</span> 75.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-    <p id="section13"></p>
-    <div class="menu-title">Fresh juices (08:00 am to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Juice Lemon</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 30.00
-            <span class="price-label">A/C:</span> 30.00
-            <span class="price-label">Parcel:</span> 35.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Lemon Soda</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 40.00
-            <span class="price-label">A/C:</span> 40.00 
-            <span class="price-label">Parcel:</span> 45.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Musambi</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 65.00
-            <span class="price-label">A/C:</span> 65.00 
-            <span class="price-label">Parcel:</span> 70.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Pomegranate</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 80.00 
-            <span class="price-label">A/C:</span> 80.00
-            <span class="price-label">Parcel:</span> 85.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Orange</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 65.00
-            <span class="price-label">A/C:</span> 65.00
-            <span class="price-label">Parcel:</span> 70.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Watermelon</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 60.00
-            <span class="price-label">A/C:</span> 60.00
-            <span class="price-label">Parcel:</span> 65.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Juice Mulaam</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 65.00
-            <span class="price-label">A/C:</span> 65.00
-            <span class="price-label">Parcel:</span> 70.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Lassi</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 50.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Vennila Milk Shake</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span>100.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Strawbery Milk Shake</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span>100.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Choco Milk Shake</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span>100.00
-            <span class="price-label">A/C:</span> 100.00
-            <span class="price-label">Parcel:</span> 105.00
-        </span>
-    </div>
-     <a class="gomenu" href="#start">^</a>
-</div><div class="menu-section">
-  <p id="section14"></p>
-    <div class="menu-title">Tea & Coffee (06:30 am to 11:00 pm)</div>
-    <div class="menu-item">
-        <span>Coffee</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 30.00
-            <span class="price-label">A/C:</span> 32.00
-            <span class="price-label">Parcel:</span> 33.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Tea</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 25.00 
-            <span class="price-label">A/C:</span> 27.00
-            <span class="price-label">Parcel:</span> 28.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Milk</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 25.00
-            <span class="price-label">A/C:</span> 25.00
-            <span class="price-label">Parcel:</span> 26.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Horlicks</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00 
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 50.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Boost</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 50.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Hot Badam Milk</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 50.00
-            <span class="price-label">A/C:</span> 50.00
-            <span class="price-label">Parcel:</span> 50.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Lemon Tea</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 25.00 
-            <span class="price-label">A/C:</span> 25.00 
-            <span class="price-label">Parcel:</span> 25.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Panagarkandu Milk</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 40.00 
-            <span class="price-label">A/C:</span> 40.00
-            <span class="price-label">Parcel:</span> 40.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Sukku Coffee</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 35.00
-            <span class="price-label">A/C:</span> 35.00
-            <span class="price-label">Parcel:</span> 35.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Black Tea</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 20.00 
-            <span class="price-label">A/C:</span> 20.00
-            <span class="price-label">Parcel:</span> 20.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Black Coffee</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 23.00
-            <span class="price-label">A/C:</span> 23.00
-            <span class="price-label">Parcel:</span> 23.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Naadu Sugar</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 32.00
-            <span class="price-label">A/C:</span> 35.00 
-            <span class="price-label">Parcel:</span> 35.00
-        </span>
-    </div>
-    <div class="menu-item">
-        <span>Green Tea</span>
-        <span class="price">
-            <span class="price-label">Non A/C:</span> 30.00 
-            <span class="price-label">A/C:</span> 30.00
-            <span class="price-label">Parcel:</span> 30.00
-        </span>
-        
-    </div>
-    <a class="gomenu" href="#start">^</a>
-</div>
-<footer>
-    <img src="./img/vanakam-removebg-preview.png" width="50px" height="50px" alt="">
-        <h2>Welcome!</h2>
-    
-
-        <h2>HOTEL SREE ANANDHA BAVAN</h2>
-    <p>NH 47, Covai - Salem Highway, Near HP Pertol Bunk, Chengapalli, Uthukkuli Tk,
-        Tirupur Dt - 638 812.</p>
-        <p>Contact - +91 94434 54444</p>
-</footer>
-</body>
-</html>
+<?php 
+session_start(); 
+?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>Alumni Website</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script> 
+<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/cufon-yui.js"></script> 
+<script type="text/javascript" src="js/arial.js"></script> 
+<script type="text/javascript" src="js/cuf_run.js"></script> 
+<style type="text/css"> 
+<!-- 
+body { 
+background-image: url(); 
+} --> 
+</style></head> 
+<body> 
+<!-- START PAGE SOURCE --> 
+<div class="main"> 
+45 
+<div class="header_block"> 
+<div class="header_resize"> 
+<div class="clr"></div> 
+</div> 
+<div class="menu_nav"> 
+<ul> 
+<li class="active"><a href="alumni_home">Home</a></li> 
+<li><a href="profile_update">Update Profile</a></li> 
+<li><a href="view_careers">View Careers</a></li> 
+<div class="dropdown"> 
+<strong> 
+<button class="dropbtn">View</button> 
+</strong><strong></strong> 
+<div class="dropdown-content"> 
+<a href="view_event">View Events</a> 
+<a href="view_news">View News</a> 
+<a href="view_notify">View Notifications</a> 
+</div> 
+</div> 
+</ul> 
+</div> 
+<div class="menu_nav-right"> 
+<ul> 
+46 
+<a href="index">Log Out</a> 
+</ul> 
+</div> 
+<div class="clr"></div> 
+</div> 
+</div> 
+<div class="clr"></div> 
+<div class="header"> 
+<div class="logo"> 
+<h1><a href="#">ALUMNI <span>SITE </span><small>Get in Touch 
+easily</small></a></h1> 
+</div> 
+<div class="clr"></div> 
+</div> 
+<!--    <div class="mainbar" align="center">   -->    
+<div class="content" align="center"> 
+<?php 
+echo "WELCOME " . $_SESSION["name"] . "<br>"; 
+?> 
+</div> 
+</div> 
+47 
+</form> 
+</div> 
+</div> 
+<div class="footer"> 
+<div class="footer_resize"> 
+<!--     
+<p class="lf"> Copyright &copy; 2019 Alumni Website- All Rights 
+Reserved</p> -->    
+<p class="rf">&nbsp;</p> 
+<div class="clr"></div> 
+</div> 
+</div> 
+<!-- END PAGE SOURCE --> 
+<div align=center></div></body> 
+</html> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>Alumni Website</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link href="style.css" rel="stylesheet" type="text/css" /> 
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script> 
+<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript" src="js/cufon-yui.js"></script> 
+<script type="text/javascript" src="js/arial.js"></script> 
+48 
+<script type="text/javascript" src="js/cuf_run.js"></script> 
+<style type="text/css"> 
+<!-- 
+body { 
+background-image: url(); 
+} --> 
+</style></head> 
+<body> 
+<!-- START PAGE SOURCE --> 
+<div class="main"> 
+<div class="header_block"> 
+<div class="header_resize"> 
+<div class="clr"></div> 
+</div> 
+<div class="menu_nav"> 
+<ul> 
+<li><a href="admin_home">Home</a></li> 
+<li><a href="new_alumni">Add Alumni</a></li> 
+<li><a class="drop" href="post_event">Post Events</a>   
+<li></li> 
+<li class="active"><a href="careers">Careers</a></li> 
+<li><a href="email">SMS/E-MAIL</a></li> 
+</ul> 
+</div> 
+<div class="menu_nav-right"> 
+<ul> 
+49 
+<a href="index">Log Out</a> 
+</ul> 
+</div> 
+<div class="clr"></div> 
+</div> 
+</div> 
+<div class="clr"></div> 
+<div class="header"> 
+<div class="logo"> 
+<h1><a href="#">ALUMNI <span>SITE </span><small>Get in Touch 
+easily</small></a></h1> 
+</div> 
+<div class="clr"></div> 
+</div> 
+<div class="content"> 
+<div class="mainbar"> 
+<div class="article"> 
+<h2>POST CAREERS</h2> 
+<div class="clr"></div> 
+<form 
+action="" 
+method="post" 
+enctype="multipart/form-data"> 
+<ol> 
+<li> 
+id="form1" 
+<label for="post_date">Job Posted Date</label> 
+name="form1" 
+50 
+51 
+ 
+            <p style="color: red">   <?php echo date('d-m-Y');?></p> 
+               </li> 
+ 
+            <li> 
+              <label for="title">Title</label> 
+              <input type="text" id="title" name="title" class="text" /> 
+            </li> 
+ 
+            <li> 
+              <label for="comp_name">Company Name</label> 
+              <input type="text" name="comp_name" id="comp_name" required="" 
+class="text"/> 
+            </li> 
+ 
+ 
+              <li> 
+              <label for="skills">Skills</label> 
+              <textarea cols="23" rows="5" name="skills" id="skills" required="" 
+class="text"></textarea> 
+            </li> 
+ 
+ 
+              <li> 
+              <label for="int_date">Interview Date</label> 
+               <input type="Date" name="int_date" id="int_date" required="" 
+class="text" /> 
+               </li> 
+ 
+ 
+              <li> 
+52 
+ 
+              <label for="int_detail">Interview Detail</label> 
+              <textarea cols="23" rows="5" name="int_detail" id="int_detail" 
+required="" class="text"></textarea> 
+            </li> 
+ 
+              <li> 
+              <label for="num_can">Reqd.Candidates</label> 
+               <input type="text" name="num_can" id="num_can" required="" 
+class="text" /> 
+               </li> 
+ 
+               <li> 
+              <label for="desig">Designation</label> 
+               <input type="text" name="desig" id="desig" required="" class="text" /> 
+               </li> 
+ 
+                
+ 
+ 
+ 
+<br> 
+             <li> 
+               <input type="submit" name="insert" value="Submit" id="button" 
+align="center" style="color: red" />               
+               <div class="clr"></div> 
+            </li> 
+             
+          </ol> 
+ 
+ 
+<?php 
+if(isset($_POST["insert"])) 
+{ 
+$title=$_POST['title']; 
+$comp_name=$_POST['comp_name']; 
+$skills=$_POST['skills']; 
+$int_date=$_POST['int_date']; 
+$int_detail=$_POST['int_detail']; 
+$num_can=$_POST['num_can']; 
+$desig=$_POST['desig']; 
+$post_date=date('d-m-Y'); 
+include('db_connect.php'); 
+$sql="INSERT 
+careers(title,comp_name,skills,int_date,int_detail,num_can,desig,post_date) 
+VALUES 
+INTO 
+('$title','$comp_name','$skills','$int_date','$int_detail','$num_can','$desig','$post_da
+ te')"; 
+if(mysqli_query($conn,$sql)) 
+{ 
+echo ("<script language='javascript'> 
+window.alert('Posted Successfully'); 
+53 
+window.location.href='careers'; 
+</script>"); 
+} 
+else 
+{ 
+echo '<script language="javascript">'; 
+echo 'alert("Not Posted")'; 
+echo '</script>'; 
+} 
+include("db_close.php"); 
+} 
+?> 
+</form> 
+</div> 
+</div> 
+<div class="footer"> 
+<div class="footer_resize"> 
+<!--     
+<p class="lf"> Copyright &copy; 2019 Alumni Website- All Rights 
+Reserved</p> -->    
+<p class="rf">&nbsp;</p> 
+<div class="clr"></div> 
+</div> 
+54 
+</div> 
+<!-- END PAGE SOURCE --> 
+<div align=center></div></body> 
+</html> 
